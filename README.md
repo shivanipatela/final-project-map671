@@ -41,4 +41,4 @@ Finally, add in a place-label and make the following edits with a white halo. Ma
 Note, the initial and final projection of the map is Web Mercator (EPSG:3857).
 
 
-#### Link to final index html: <a href="http://127.0.0.1:5500/index.html">Index</a>
+#### Link to final index: <a href="http://127.0.0.1:5500/index.html">Index</a> and index html file: <a href="https://github.com/shivanipatela/final-project-map671/blob/main/index.html">Index HTML File</a>
