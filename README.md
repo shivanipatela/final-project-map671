@@ -1,4 +1,4 @@
-# Map of Hog Farms in the United States
+# Hog Farms in Sampson and Duplin County, North Carolina
 
 The following map illustrates the number of hog, or pig, farms across the United States. Over the past century, hog farming has expanded dramatically nationwide as pork production has become a major component of the U.S. meat industry. This interactive map allows viewers to zoom in on individual states and counties to examine the concentration of CAFO (Concentrated Animal Feeding Operation) hog farms in specific regions. The visualization highlights how this growth is unevenly distributed across the country, with some states experiencing far more rapid expansion than others. One state that has seen a particularly significant increase is North Carolina, specifically Sampson and Duplin County!
 
