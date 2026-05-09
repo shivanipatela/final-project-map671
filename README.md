@@ -33,7 +33,7 @@ Finally, add in a place-label and make the following edits with a white halo. Ma
 
 <img src="images/place-label-edit.png" class="png-title" width="350">
 
-Your map should look like the following when zoomed in:
+### Your map should look like the following when zoomed in:
 
 <img src="images/zoomed-example.png" class="png-title" width="400">
 
@@ -41,64 +41,4 @@ Your map should look like the following when zoomed in:
 Note, the initial and final projection of the map is Web Mercator (EPSG:3857).
 
 
-## Final project components
-
-The final project is worth 500 points. 
-
-### Project Setup (50 points)
-
-
-### Final Map (130 points)
-
-
-
-### Project Map (130 points)
-
-And here's the map! The map should contain the following elements.
-
-* Map displays a location (10 points)
-
-* Map contains an item(s) that is the focus of the map's objective (10 points)
-
-* Map includes a detailed legend to allow the viewer to interpret what is being shown on the map (30 points)
-
-* Map includes metadata sufficient for the viewer to interpret the map initially, including author, projection, scale, directional arrow, and software used (30 points)
-
-* Map uses a color scheme suitable for the data type (20 points)
-
-* Map is available in two resolutions, either two exported static maps at two dpi levels or an interactive map available at small and full screen versions (15 points)
-
-* Map presentation (15 points), including font sizes that can be viewed from the smaller resolution map, and map is free from numerous spelling or grammar errors
-
-
-### Project Website (130 points)
-
-* Index.html file loads and displays the map with no broken links (30 points)
-
-* The index.html file includes a working link back to your GitHub repository (20 points)
-
-* Link is included for a higher resolution image or the full screen interactive map (20 points)
-
-* Index.html includes title, header, and other html formatting (10 points)
-
-* Index.html includes initial metadata such that the viewer to interpret the map (20 points)
-
-* Page presentation includes appropriate font sizes, font and background colors, to be accessible (10 points)
-
-* Index.html file does not include any extra visible code due to formatting and coding issues (20 points)
-
-### Project Discussion (60 points)
-
-Create a post to the final project map gallery
-
-* Include a link to your repository (if a public repository) or several screenshots of your readme.md, index.html file, and map (if a private repository) (10 points)
-
-* Provide a short description of why you created the map (10 points)
-
-* Provide an answer to the question: what went well with the final project? (15 points)
-
-* Provide an answer to the question: what would you like to try differently on future maps? (15 points)
-
-* View and comment on at least 1 other final project post from the class (10 points)
-
-# Link to final index! with final projection
+#### Link to final index html: <a href="http://127.0.0.1:5500/index.html">Index</a>
