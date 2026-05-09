@@ -1,48 +1,191 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8' />
-  <title>Hog Farms in the United States</title>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet" />
-  <style>
-    body { margin:0; padding:0; }
-    #map { position:absolute; top:0; bottom:0; width:100%; }
-  </style>
+    <meta charset=utf-8 />
+    <title>Hog Farms Across the U.S.</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900i" rel="stylesheet">
+
+    <style>
+        /* UK Colors: 
+            #c7c9c8 light gray 
+            #63666a dark gray
+            #15397f dark blue
+            #009bda light blue
+            #0033a0 official blue
+        */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #c7c9c8;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #3d3d3d;
+            font-size: 1.1em;
+
+        }
+
+        section {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 900i;
+            font-size: 2.8em;
+            font-style: italic;
+            /* The em unit. 3x the current size */
+            letter-spacing: .01em;
+            margin: 0 0 15px 0;
+            /* text-transform: uppercase; */
+        }
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #63666a;
+            font-size: 1.5em;
+            letter-spacing: .06em;
+            font-style: italic;
+            margin: 0 0 25px 0;
+        }
+
+        p {
+            font-size: 1.15em;
+            line-height: 1.8em;
+            margin: 0 0 25px 0;
+        }
+
+        a {
+            color: #15397f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding: 0px 20px 4px 20px;
+            /* font-size: 0.96em; */
+            line-height: 1.6em;
+            color: #63666a;
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        #map {
+            width: 100%;
+            margin: 0px auto;
+
+        }
+
+        .max-image-width {
+            width: 100%;
+        }
+
+        /* add custom style class here */
+
+        .linkbox {
+            margin: 3px 0 20px 0;
+            display: block;
+            font-weight: 300;
+        }
+
+        hr {
+            border: 0px;
+            border-bottom: 1px solid #3d3d3d;
+            padding-top: 20px;
+        }
+
+        /* Use float property to make two-column layout */
+
+        .first-column {
+            float: left;
+            width: 48%;
+            padding-right: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 48%;
+        }
+
+        /* Clear floats after the columns */
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .svg-title {
+            float: left;
+            display: inline-block;
+            width: 75px;
+            margin: -8px 10px -8px 0;
+        }
+
+        /* When browser is 800px wide or less */
+
+        @media screen and (max-width: 800px) {
+
+            .first-column,
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
+    <iframe src="map.html" width="100%" height="440px"></iframe>
+    <section>
+     <a href='map.html' class="linkbox">Full-screen version</a>
 
-<div id='map'></div>
+        <h1>Hog Farms Across the U.S.</h1>
+        <h2>created by Shivani Patel, University of Kentucky MAP 671-201</h2>
+        <div class="row">
+             <div class="first-column">
+                
+                <h3>Why understanding the location of hog farms in the United States is important:</h3>
+                <p>
+                Hogs, or pigs, have become one of the most essential meat products in the livestock industry and for consumers 
+                across the country. This growing demand has led to a dramatic increase in both consumption and production over 
+                the past decade. As a result, significant challenges have emerged for individuals living in low-income rural 
+                communities across the United States, particularly for homeowners in North Carolina. View this map to explore 
+                the high concentration of hog farms in North Carolina, especially in Sampson and Duplin counties—compared with 
+                other counties and states.
+                <p>
 
-  <script>
-    // Change this to your Access token ----------------------
-    pk.eyJ1Ijoic2hpdmFuaXBhdGVsYSIsImEiOiJjbW9oeTFsZzEwNDQ5MnBvbmtlaWN4MmgzIn0.uyYeNfb5bugWOA9YRna1kw = 'pk....';
-    // ------------------------------------------------
+                <h3>Datasets utilizted to create the map:
+                </h3>
+                <ul>
+                    <li>CAFO Pigs data from FigShare: <a href="https://figshare.com/articles/dataset/Size_and_location_of_AFOs_across_the_U_S_/29511140?file=56080049">CAFO Data</a></li>
+                    <li>State data from Census.gov: <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html">State Census Data</a></li>
+                    <li>County data from USDA.gov: <a href="https://www.ers.usda.gov/data-products/county-level-data-sets/county-level-data-sets-download-data">County USDA Data</a></li>
+                </ul>
 
-    var map = new mapboxgl.Map({
-      container: 'map',
+                Systems utilized to create this map include MapBox (map creation), GitHub (repository creation) Visual Sudio Code (resposity and website code manipulation).
+                </p>
 
-      // Change this to your style --------------------
-      style: '...',
-      // ----------------------------------------------
 
-      // Change to your location, please note this location information is for Gray's Arch, you will need to edit the center coordinates 
-      zoom: 13,
-      center: [-73.092775, 42.707420]
-      // ----------------------------------------------
 
-    });
 
-    // Add geolocate control to the map.
-     map.addControl(new mapboxgl.GeolocateControl({
-      positionOptions: {
-        enableHighAccuracy: true
-      },
-      trackUserLocation: true
-    }));
-  </script>
+            </div>
+        </div>
 
+
+        <hr>
+        <h4>Check out my Github profile!</h4>
+        <!-- <h4><a href="https://uky-gis.github.io">UKy GIS and Mapping</a></h4> -->
+        <a href="https://github.com/shivanipatela">
+            <img src="github.png" alt="Shivani Patel GitHub profile."></a>
+    </section>
 </body>
-
 </html>

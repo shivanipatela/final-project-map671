@@ -9,6 +9,7 @@ The following map illustrates the number of hog, or pig, farms across the United
 * State data from Census.gov: <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html">State Census Data</a>
 * County data from USDA.gov: <a href="https://www.ers.usda.gov/data-products/county-level-data-sets/county-level-data-sets-download-data">County USDA Data</a>
 
+
 ### Step 2: Save each downloaded zip file into a folder labeled "final-project".
 
 <img src="images/folder-screenshot.png" class="png-title" width="500">
@@ -28,36 +29,27 @@ Make two copies of the counties file. One will be used for borders and the secon
 
 <img src="images/state-borders-edits.png" class="png-title" width="318"> <img src="images/cafo-edits.png" class="png-title" width="302">
 
+Finally, add in a place-label and make the following edits with a white halo. Make the halo's width 2px to make the state name clearly visible.
+
+<img src="images/place-label-edit.png" class="png-title" width="350">
+
 Your map should look like the following when zoomed in:
 
 <img src="images/zoomed-example.png" class="png-title" width="400">
 
 
+Note, the initial and final projection of the map is Web Mercator (EPSG:3857).
+
+
 ## Final project components
 
-The final project is worth 500 points. The points are assigned as follows.
+The final project is worth 500 points. 
 
 ### Project Setup (50 points)
 
-* Create a repository (10 points)
-* Add the instructor as a collaborator (10 points)
-    * Instructor GitHub username jfobrycki
-* Add a license to the repository (10 points)
-* Project files should be organized in folders as needed to demonstrate attention to data management (20 points)
 
-### Project Description (130 points)
+### Final Map (130 points)
 
-The README.md file should provide sufficient detail on the project and include the following components.
-
-* Project title (10 points)
-* Information about data source (10 points) 
-* Link to the data source, if applicable, or a copy of the full data source for download (10 points)
-* Markdown formatting throughout the document (10 points)
-* Description about why you created the map (10 points)
-* Description about how the map was created, including any geoprocessing methods or other steps you took described in a way that someone else could try to recreate your map process in a new location (30 points)
-* Active link to the final index.html page (20 points)
-* Include embedded images, as needed, to document the mapping process, including key data management or geoprocessing steps and settings (20 points)
-* Information about the projection of the original data and the projection for the final data (10 points)
 
 
 ### Project Map (130 points)
@@ -108,3 +100,5 @@ Create a post to the final project map gallery
 * Provide an answer to the question: what would you like to try differently on future maps? (15 points)
 
 * View and comment on at least 1 other final project post from the class (10 points)
+
+# Link to final index! with final projection
