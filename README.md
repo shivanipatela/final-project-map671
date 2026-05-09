@@ -1,24 +1,37 @@
 # Map of Hog Farms in the United States
 
-The following map illustrates the number of hog, or pig, farms across the United States. Over the past century, hog farming has expanded dramatically nationwide as 
-pork production has become a major component of the U.S. meat industry. This interactive map allows viewers to zoom in on individual states and counties to examine 
-the concentration of CAFO (Concentrated Animal Feeding Operation) hog farms in specific regions. The visualization highlights how this growth is unevenly distributed 
-across the country, with some states experiencing far more rapid expansion than others. One state that has seen a particularly significant increase is North Carolina!
+The following map illustrates the number of hog, or pig, farms across the United States. Over the past century, hog farming has expanded dramatically nationwide as pork production has become a major component of the U.S. meat industry. This interactive map allows viewers to zoom in on individual states and counties to examine the concentration of CAFO (Concentrated Animal Feeding Operation) hog farms in specific regions. The visualization highlights how this growth is unevenly distributed across the country, with some states experiencing far more rapid expansion than others. One state that has seen a particularly significant increase is North Carolina, specifically Sampson and Duplin County!
 
-#### How the map was created:
+## How the create the map:
 
-First, the following data was downloaded:
-* CAFO Pigs data from FigShare: https://figshare.com/articles/dataset/Size_and_location_of_AFOs_across_the_U_S_/29511140?file=56080049
-* State data from Census.gov: https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html
-* County data from USDA.gov: https://www.ers.usda.gov/data-products/county-level-data-sets/county-level-data-sets-download-data
+### Step 1: Download data.
+* CAFO Pigs data from FigShare: <a href="https://figshare.com/articles/dataset/Size_and_location_of_AFOs_across_the_U_S_/29511140?file=56080049">CAFO Data</a>
+* State data from Census.gov: <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html">State Census Data</a>
+* County data from USDA.gov: <a href="https://www.ers.usda.gov/data-products/county-level-data-sets/county-level-data-sets-download-data">County USDA Data</a>
 
-Each zip file with data was saved into a file labled final-project.
- 1) width of 1,200 px 
- 2) width of 8,000 px
+### Step 2: Save each downloaded zip file into a folder labeled "final-project".
 
-#### Embedded interactive map option
+<img src="images/folder-screenshot.png" class="png-title" width="500">
 
-This is a zoomable map posted on an html page. The map needs to include an `iframe` element in the web page to link to the map. There should be a link provided on the html page to a full-screen version of the map.
+### Step 3: Add zipped files into MapBox as datasets.
+
+<img src="images/mapbox-tilesets.png" class="png-title" width="500">
+
+### Step 4: Add the tiles and make the edits shown in the screenshots.
+Add a blue background so the U.S. stands out on the map.
+
+<img src="images/background-edit.png" class="png-title" width="310"> <img src="images/US-background-edit.png" class="png-title" width="302">
+
+Make two copies of the counties file. One will be used for borders and the second will be used to label each U.S. county.
+
+<img src="images/county-border-edits.png" class="png-title" width="350"> <img src="images/county-labels-edits.png" class="png-title" width="264">
+
+<img src="images/state-borders-edits.png" class="png-title" width="318"> <img src="images/cafo-edits.png" class="png-title" width="302">
+
+Your map should look like the following when zoomed in:
+
+<img src="images/zoomed-example.png" class="png-title" width="400">
+
 
 ## Final project components
 
